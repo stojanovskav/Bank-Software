@@ -42,34 +42,35 @@ int Register(std::vector<std::string> &usernames, std::vector<std::string> &pass
 int Quit(std::vector<std::string> &usernames, std::vector<std::string> &passwords, std::vector<double> &balances);
  
 ### Menu 2 if Register()/Login() is successful 
+
 int nextStep(std::vector<std::string> &usernames, std::vector<std::string> &passwords, std::vector<double> &balances, 
-            double X, std::string username ); // if Login() or Register() are successfull we call nextStep()
+            double X, std::string username ); 
 
  void cancelAccount(std::vector<std::string> &usernames, std::vector<std::string> &passwords, std::vector<double> &balances,
                     std::string username, double balance);
 
 int Deposit(std::vector<std::string> &usernames, std::vector<std::string> &passwords, std::vector<double> &balances,
-            std::string username) ;
+            std::string username);
 
 void Logout(std::vector<std::string> &usernames, std::vector<std::string> &passwords, std::vector<double> &balances);
 
 int Transfer(std::vector<std::string> &usernames, std::vector<std::string> &passwords, std::vector<double> &balances,
-            std::string username) 
+            std::string username);
 
 int Withdraw(std::vector<std::string> &usernames, std::vector<std::string> &passwords, std::vector<double> &balances,
-                std::string username) {
+                std::string username);
 
 ## Write and Read data to/from file
   
-void readData(std::vector<std::string> &usernames, std::vector<std::string> &passwords, std::vector<double> &balances) // read data from file and store in different vectors
+void readData(std::vector<std::string> &usernames, std::vector<std::string> &passwords, std::vector<double> &balances) 
 
-void writeData(std::vector<std::string> &usernames, std::vector<std::string> &passwords, std::vector<double> &balances); // write data to "users.txt" file
+void writeData(std::vector<std::string> &usernames, std::vector<std::string> &passwords, std::vector<double> &balances); 
   
 ## Hash password
   
-size_t hash_password(const std::string password); to hash a string into size_t variable
+size_t hash_password(const std::string password); 
   
-std::string toString(size_t hashed_password); // cast the hashed password from size_t to std::string
+std::string toString(size_t hashed_password); 
   
 ## Round number to two decimals
 
@@ -77,4 +78,4 @@ void roundToTwoDecimals(double &amount);
   
 ## get index position
   
-int getIndex(std::vector<std::string> usernames, std::string username); // gets index position
+int getIndex(std::vector<std::string> usernames, std::string username);
