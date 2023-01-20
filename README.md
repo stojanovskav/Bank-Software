@@ -26,6 +26,8 @@ bool isValidPassword(std::string password);
 bool isValidUsername(std::string username);
   
 
+  
+  
  
 size_t hash_password(const std::string password); to hash a string into size_t variable
   
