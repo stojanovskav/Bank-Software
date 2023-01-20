@@ -1,4 +1,8 @@
 # Bank-Software
+Solution to course project Bank Software
+Introduction to programming course
+Faculty of Mathematics and Informatics of Sofia University
+Winter semester 2022/2023
 
 ## Description
 This is a program that simulates a basic set of activities in a given bank.
